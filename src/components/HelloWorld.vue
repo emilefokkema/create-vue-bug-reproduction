@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import FirstComponent from './FirstComponent.vue'
 defineProps<{
   msg: string
 }>()
@@ -12,6 +13,7 @@ defineProps<{
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +
       <a target="_blank" href="https://v2.vuejs.org/">Vue 2</a>. What's next?
     </h3>
+    <first-component :show="true"/>
   </div>
 </template>
 
